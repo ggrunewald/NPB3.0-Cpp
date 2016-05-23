@@ -1,0 +1,2 @@
+rm *.gch ../aux2/*.gch a.out a.exe
+g++ ../aux2/* CGWorker.cpp CGBase.cpp CG.cpp main.cpp -lpthread -std=c++11

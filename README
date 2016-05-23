@@ -1,8 +1,0 @@
-BENCHMARK	SERIAL		PARALLEL
-BT					
-CG		ok		ok
-FT					
-IS		ok		ok
-LU					
-MG					
-SP

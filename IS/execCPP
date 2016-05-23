@@ -1,0 +1,26 @@
+rm *.gch ../aux2/*.gch a.out a.exe
+g++ ../aux2/* IS.cpp ISBase.cpp RankThread.cpp main.cpp -lpthread -std=c++11
+echo serials
+./a.out -s -c A > classAserial.res
+./a.out -s -c B > classBserial.res
+./a.out -s -c C > classCserial.res
+./a.out -s -c W > classWserial.res
+./a.out -s -c S > classSserial.res
+echo n2
+./a.out -n 2 -c A > classAn2.res
+./a.out -n 2 -c B > classBn2.res
+./a.out -n 2 -c C > classCn2.res
+./a.out -n 2 -c W > classWn2.res
+./a.out -n 2 -c S > classSn2.res
+echo n4
+./a.out -n 4 -c A > classAn4.res
+./a.out -n 4 -c B > classBn4.res
+./a.out -n 4 -c C > classCn4.res
+./a.out -n 4 -c W > classWn4.res
+./a.out -n 4 -c S > classSn4.res
+echo n8
+./a.out -n 8 -c A > classAn8.res
+./a.out -n 8 -c B > classBn8.res
+./a.out -n 8 -c C > classCn8.res
+./a.out -n 8 -c W > classWn8.res
+./a.out -n 8 -c S > classSn8.res
